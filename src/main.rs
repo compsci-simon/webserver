@@ -38,6 +38,6 @@ fn handle_http_request(request: &str) -> String {
     let http_version = first_line_parts[2];
     println!("Method: {}, Path: {}, HTTP Version: {}", method, path, http_version);
 
-    let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", request);
+    let response = format!("HTTP/1.1 200 OK\r\n\r\nHello world!");
     response
 }
